@@ -18,17 +18,68 @@
       </nav>
     </header>
 
-    <section id="code-review-video">
-      <h2>Code Review Walkthrough</h2>
+    <section id="code-review-summary" class="container">
+      <h2>Code Review Summary</h2>
       <p>
-        In this video, I provide an overview of my selected artifact, its
-        existing functionality, areas for improvement, and planned enhancements.
+        The Code Review page provides an overview of the enhancements made to my
+        Weight Tracker Application as part of my CS-499 ePortfolio. This review
+        highlights the initial functionality of the project, areas identified
+        for improvement, and the modifications implemented to optimize
+        performance, security, and user experience.
       </p>
+
+      <h3>Existing Functionality</h3>
+      <p>Initially, the application allowed users to:</p>
+      <ul>
+        <li>Log their daily weight and track progress.</li>
+        <li>Set weight goals and compare results.</li>
+        <li>Store records locally using a Room Database.</li>
+        <li>Navigate through a basic user interface.</li>
+      </ul>
+      <p>
+        While functional, the original implementation lacked efficiency in
+        database operations, security best practices, and user validation
+        checks.
+      </p>
+
+      <h3>Key Enhancements</h3>
+      <ul>
+        <li>
+          <strong>Database Optimization:</strong> Indexed frequently queried
+          columns, implemented transactions, and used LiveData/ViewModel for
+          better data management.
+        </li>
+        <li>
+          <strong>Security Improvements:</strong> Introduced password hashing
+          with `BCrypt`, enforced stronger password validation, and implemented
+          foreign key constraints.
+        </li>
+        <li>
+          <strong>Code Refactoring for Maintainability:</strong> Adopted MVVM
+          architecture, applied repository patterns, and optimized UI updates.
+        </li>
+        <li>
+          <strong>User Experience Enhancements:</strong> Added validation for
+          weight entries, integrated real-time feedback, and improved UI design.
+        </li>
+      </ul>
+
+      <h3>Final Thoughts</h3>
+      <p>
+        Through these enhancements, the Weight Tracker Application now follows
+        industry best practices in software engineering, security, and database
+        management. These improvements demonstrate my ability to analyze
+        existing code, identify inefficiencies, and implement strategic
+        solutions that enhance performance and user experience.
+      </p>
+      <p>Watch the full Code Review video below:</p>
       <iframe
-        width="720"
-        height="405"
+        width="560"
+        height="315"
         src="https://www.youtube.com/embed/fyGmKflzWLs"
+        title="Code Review Video"
         frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
     </section>

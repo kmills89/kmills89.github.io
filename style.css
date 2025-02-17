@@ -2,15 +2,46 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
+  text-align: center;
 }
 
 header {
-  background-color: #0073e6;
+  background: #6a0dad;
   color: white;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 3px solid white;
+  background: white;
+}
+
+.name-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: white;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
 }
 
 nav ul {
@@ -18,31 +49,79 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  background: #5a0cae;
+  padding: 0.75rem;
+  margin: 0;
 }
 
 nav ul li {
-  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+h1,
+h2,
+h3 {
+  color: #6a0dad;
+}
+
+p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.artifact-img {
+  width: 80%;
+  max-width: 190px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #6a0dad;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5a0cae;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #0073e6;
+  background: #6a0dad;
   color: white;
   margin-top: 20px;
 }
