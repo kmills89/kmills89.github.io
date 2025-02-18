@@ -1,75 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artifacts - Kenneth M. Mills</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Artifacts</h1>
-      <nav>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Artifact</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="code-review.html">Code Review</a></li>
+        <li>
+          <a href="https://github.com/kmills89">GitHub Profile</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    
+    <section class="container">
+        <h2>Weight Tracker Application</h2>
+        <p>
+            The Weight Tracker Application was originally developed during CS-360 Mobile Architecture and Programming in March 2024. It allows users to log weight entries, set target goals, and track progress over time with features such as user authentication, CRUD operations, and database-driven data persistence using Java, Android Studio, and Room Database.
+        </p>
+        
+        <div class="image-container">
+            <div class="image-box">
+                <p class="image-caption">Before Enhancement</p>
+                <img src="before_enhancement.png" alt="Before Enhancement" class="artifact-img">
+            </div>
+            <div class="image-box">
+                <p class="image-caption">After Enhancement</p>
+                <img src="after_enhancement.png" alt="After Enhancement" class="artifact-img">
+            </div>
+        </div>
+        
+        <h3>Justification for Inclusion</h3>
+        <p>
+            This artifact highlights my expertise in software engineering, database optimization, and UI/UX design. The enhancements significantly improved performance, security, and user experience, aligning with industry best practices.
+        </p>
+        
+        <h3>Enhancements & Key Improvements</h3>
+        
+        <h4>Software Design and Engineering</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="code-review.html">Code Review</a></li>
-          <li>
-            <a href="https://github.com/kmills89">GitHub Profile</a>
-          </li>
+            <li>Refactored codebase for modular design and maintainability.</li>
+            <li>Improved UI/UX with CardView layouts, Floating Action Buttons (FABs), and better navigation.</li>
+            <li>Implemented password hashing, input validation, and duplicate user prevention.</li>
         </ul>
-      </nav>
-    </header>
-
-    <section id="artifact-summary" class="container">
-      <h2>Weight Tracker Application</h2>
-      <p>
-        The Weight Tracker Application was initially developed during the
-        **CS-360 Mobile Architecture and Programming** course as part of my
-        Computer Science degree. The purpose of the application is to allow
-        users to track their weight over time, helping them monitor progress
-        toward their fitness goals.
-      </p>
-      <p>
-        For my final project in **CS-499**, I enhanced the application by
-        improving data structure management, user experience, and database
-        optimization.
-      </p>
+        
+        <h4>Algorithms and Data Structures</h4>
+        <ul>
+            <li>Replaced daily weight entries with a week-based structure using a Map<String, Double> format.</li>
+            <li>Optimized LiveData observation and RecyclerView rendering to prevent redundant UI updates.</li>
+            <li>Applied lazy loading and DiffUtil for enhanced performance.</li>
+        </ul>
+        
+        <h4>Databases</h4>
+        <ul>
+            <li>Optimized database schema by merging DailyWeight into WeekRecord.</li>
+            <li>Improved query performance with indexed columns and optimized DAO methods.</li>
+            <li>Enhanced data security using foreign key constraints and transaction validation.</li>
+        </ul>
+        
+        <h3>Reflection on the Enhancement Process</h3>
+        <p>
+            Throughout this enhancement process, I gained valuable experience in performance tuning, database optimization, and debugging complex UI interactions. The shift from daily logging to week-based tracking improved efficiency, and implementing lazy loading mechanisms reduced UI lag.
+        </p>
+        <p>
+            Overcoming challenges such as database migration without data loss, fixing RecyclerView UI bugs, and optimizing LiveData updates reinforced my problem-solving skills.
+        </p>
     </section>
-
-    <section id="artifact-details" class="container">
-      <h3>Before and After Enhancements</h3>
-
-      <h4>Before Enhancements</h4>
-      <p>
-        Originally, the app stored daily weight logs that required users to
-        manually enter a date and weight each time. This approach made tracking
-        historical data less intuitive and required more manual effort.
-      </p>
-      <img
-        src="before_enhancement.png"
-        alt="Before Enhancements Screenshot"
-        class="artifact-img"
-      />
-
-      <h4>After Enhancements</h4>
-      <p>
-        The enhanced version introduces a week-based tracking system,
-        automatically organizing weight data into weekly segments for better
-        usability. The UI has also been improved for a cleaner, more intuitive
-        experience.
-      </p>
-      <img
-        src="after_enhancement.png"
-        alt="After Enhancements Screenshot"
-        class="artifact-img"
-      />
-    </section>
-
+    
     <footer>
-      <p>
-        &copy; 2025 Kenneth M. Mills |
-        <a href="https://github.com/kmills89">GitHub Profile</a>
-      </p>
+        <p>&copy; 2025 Kenneth M. Mills | <a href="https://github.com/kmills89">GitHub Profile</a></p>
     </footer>
-  </body>
+</body>
 </html>
